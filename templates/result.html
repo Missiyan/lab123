@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат изменения размера изображения</title>
+</head>
+<body>
+    <h1>Результат изменения размера изображения</h1>
+    <h2>Оригинальное изображение</h2>
+    <img src="data:image/png;base64,{{ original_data }}" alt="Оригинальное изображение">
+    <br><br>
+    <h2>Измененное изображение</h2>
+    <img src="data:image/png;base64,{{ resized_data }}" alt="Измененное изображение">
+    <br><br>
+    <img src="data:image/png;base64,{{ histogram_data }}" alt="Гистограмма">
+</body>
+</html>

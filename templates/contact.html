@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Пройдите рекапчу</h1>
+  <form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    {{ form.recaptcha }}
+    {{ form.submit }}
+  </form>
+{% endblock %}
